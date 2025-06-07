@@ -1174,6 +1174,27 @@
   dependencies:
     "@hapi/hoek" "^9.0.0"
 
+"@hot-updater/core@0.18.3":
+  version "0.18.3"
+  resolved "https://registry.yarnpkg.com/@hot-updater/core/-/core-0.18.3.tgz#4cf1f7371f0f6d84af514aab0d3d4cb559942661"
+  integrity sha512-Q9wtbapFf8nLZnoyaa1YtwGn2cluG8NukFyyfgIVKsDynz3Kzvv5LkNs5FgBuR5qU6FaDjkxwmqy0l9u4rv33A==
+
+"@hot-updater/js@0.18.3":
+  version "0.18.3"
+  resolved "https://registry.yarnpkg.com/@hot-updater/js/-/js-0.18.3.tgz#c45bfee146f4b9d13a8241a250068e7785581766"
+  integrity sha512-fG/H34xuIyjPGaj6MVTT2bC0f0Q+x3DypVUe2eYoikNi1l0pQzk+Q8RXeKjjpr5oV4ujelRyIHt8H612UxzS6g==
+  dependencies:
+    "@hot-updater/core" "0.18.3"
+
+"@hot-updater/react-native@^0.18.3":
+  version "0.18.3"
+  resolved "https://registry.yarnpkg.com/@hot-updater/react-native/-/react-native-0.18.3.tgz#f3ab6be89f27d535660ed219883c44c137253fb7"
+  integrity sha512-QqH3/qDpVMIkUmiZItm106PqKAQD1g7EIugZU74H0gNIwUTyxBpPY3ewAQN6UDvTYV67mQfJa9qpQF5zFjYh/A==
+  dependencies:
+    "@hot-updater/core" "0.18.3"
+    "@hot-updater/js" "0.18.3"
+    use-sync-external-store "1.5.0"
+
 "@humanwhocodes/config-array@^0.13.0":
   version "0.13.0"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.13.0.tgz#fb907624df3256d04b9aa2df50d7aa97ec648748"
@@ -8428,7 +8449,7 @@ use-latest-callback@^0.2.1:
   resolved "https://registry.yarnpkg.com/use-latest-callback/-/use-latest-callback-0.2.3.tgz#2d644d3063040b9bc2d4c55bb525a13ae3de9e16"
   integrity sha512-7vI3fBuyRcP91pazVboc4qu+6ZqM8izPWX9k7cRnT8hbD5svslcknsh3S9BUhaK11OmgTV4oWZZVSeQAiV53SQ==
 
-use-sync-external-store@^1.2.2, use-sync-external-store@^1.4.0:
+use-sync-external-store@1.5.0, use-sync-external-store@^1.2.2, use-sync-external-store@^1.4.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/use-sync-external-store/-/use-sync-external-store-1.5.0.tgz#55122e2a3edd2a6c106174c27485e0fd59bcfca0"
   integrity sha512-Rb46I4cGGVBmjamjphe8L/UnvJD+uPPtTkNvX5mZgqdbavhI4EbgIWJiIHXJ8bc/i9EQGPRh4DwEURJ552Do0A==
