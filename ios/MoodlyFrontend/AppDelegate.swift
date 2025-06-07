@@ -2,34 +2,42 @@ import UIKit
 import React
 import React_RCTAppDelegate
 import ReactAppDependencyProvider
+import HotUpdaterReactNative
 
 @main
 class AppDelegate: RCTAppDelegate {
-  override func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+  override func application(
+    _ application: UIApplication,
+    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil
+  ) -> Bool {
     self.moduleName = "MoodlyFrontend"
     self.dependencyProvider = RCTAppDependencyProvider()
-
-    // You can add your custom initial props in the dictionary below.
-    // They will be passed down to the ViewController used by React Native.
     self.initialProps = [:]
-
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
   }
 
-  override func application(_ application: UIApplication,
-                   supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+  override func application(
+    _ application: UIApplication,
+    supportedInterfaceOrientationsFor window: UIWindow?
+  ) -> UIInterfaceOrientationMask {
     return .portrait
   }
 
   override func sourceURL(for bridge: RCTBridge) -> URL? {
-    self.bundleURL()
+    #if DEBUG
+      return RCTBundleURLProvider.sharedSettings()
+        .jsBundleURL(forBundleRoot: "index", fallbackResource: nil)
+    #else
+      return HotUpdater.bundleURL()
+    #endif
   }
 
   override func bundleURL() -> URL? {
     #if DEBUG
-        RCTBundleURLProvider.sharedSettings().jsBundleURL(forBundleRoot: "index")
+      return RCTBundleURLProvider.sharedSettings()
+        .jsBundleURL(forBundleRoot: "index", fallbackResource: nil)
     #else
-        Bundle.main.url(forResource: "main", withExtension: "jsbundle")
+      return HotUpdater.bundleURL()
     #endif
   }
 }

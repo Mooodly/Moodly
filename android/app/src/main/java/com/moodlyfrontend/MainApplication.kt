@@ -41,4 +41,8 @@ class MainApplication : Application(), ReactApplication {
       load()
     }
   }
+
+  override fun getJSBundleFile(): String? {
+    return HotUpdater.getJSBundleFile(applicationContext)
+  }
 }
