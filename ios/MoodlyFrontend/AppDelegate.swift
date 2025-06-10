@@ -2,7 +2,7 @@ import UIKit
 import React
 import React_RCTAppDelegate
 import ReactAppDependencyProvider
-import HotUpdaterReactNative
+import HotUpdater
 
 @main
 class AppDelegate: RCTAppDelegate {
@@ -24,18 +24,13 @@ class AppDelegate: RCTAppDelegate {
   }
 
   override func sourceURL(for bridge: RCTBridge) -> URL? {
-    #if DEBUG
-      return RCTBundleURLProvider.sharedSettings()
-        .jsBundleURL(forBundleRoot: "index", fallbackResource: nil)
-    #else
-      return HotUpdater.bundleURL()
-    #endif
+    self.bundleURL()
   }
 
   override func bundleURL() -> URL? {
     #if DEBUG
       return RCTBundleURLProvider.sharedSettings()
-        .jsBundleURL(forBundleRoot: "index", fallbackResource: nil)
+      .jsBundleURL(forBundleRoot: "index", fallbackExtension: nil)
     #else
       return HotUpdater.bundleURL()
     #endif
