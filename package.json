@@ -18,6 +18,7 @@
     "@realm/react": "^0.11.0",
     "@reduxjs/toolkit": "^2.7.0",
     "dayjs": "^1.11.13",
+    "hot-updater": "^0.19.3",
     "react": "19.0.0",
     "react-native": "0.79.1",
     "react-native-css-interop": "^0.1.22",
