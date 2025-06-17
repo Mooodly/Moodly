@@ -26,6 +26,7 @@ module.exports = {
         path: '.env',
         safe: false,
         allowUndefined: true,
+        allowlist: ['HOT_UPDATER_SUPABASE_URL', 'KAKAO_OPEN_CHAT_LINK'],
       },
     ],
   ],
