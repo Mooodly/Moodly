@@ -1,4 +1,4 @@
-import { Image, StatusBar, StyleSheet, View } from 'react-native';
+import { Button, Image, StatusBar, StyleSheet, View } from 'react-native';
 
 import { useInitializeDiary } from '@/features/diary/hooks/useInitializeDiary';
 import { MAIN_ICONS } from '@/shared/assets/images/main';
@@ -7,10 +7,18 @@ import { jumpToTab, navigate } from '@/shared/lib';
 import ActionButton from '@/shared/ui/elements/ActionButton';
 import DiaryCountCard from '@/shared/ui/elements/DiaryCountCard';
 import { H2 } from '@/shared/ui/typography/H2';
+import { HotUpdater } from '@hot-updater/react-native';
+import { useEffect, useState } from 'react';
 
 const Home = () => {
   useInitializeDiary();
   const { data: hasDiary } = useAppSelector(state => state.diarySlice.isDiaryExist);
+  const [bundleId, setBundleId] = useState<string | null>(null);
+
+  useEffect(() => {
+    const bundleId = HotUpdater.getBundleId();
+    setBundleId(bundleId);
+  }, []);
 
   const titleText = hasDiary
     ? '일기를 저장했어요\n오늘 하루도 수고했어요'
@@ -36,7 +44,7 @@ const Home = () => {
             weight="semibold"
             style={styles.mentStyle}
           >
-            {titleText}
+            {bundleId}
           </H2>
 
           <Image
@@ -51,6 +59,14 @@ const Home = () => {
           >
             {buttonText}
           </ActionButton>
+          <Button
+            title="Reload"
+            onPress={() => HotUpdater.reload()}
+          />
+          <Button
+            title="HotUpdater.runUpdateProcess()"
+            onPress={() => {}}
+          />
         </View>
       </View>
     </>
