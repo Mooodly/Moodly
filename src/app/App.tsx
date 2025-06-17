@@ -10,6 +10,7 @@ import { Provider } from 'react-redux';
 import { navigationRef } from '@/shared/lib';
 import '../../global.css';
 
+import { HOT_UPDATER_SUPABASE_URL } from '@env';
 import { HotUpdater, getUpdateSource } from '@hot-updater/react-native';
 import { Text, View } from 'react-native';
 import RootStack from './navigation/RootStack';
@@ -46,12 +47,12 @@ function App() {
 }
 
 export default HotUpdater.wrap({
-  source: getUpdateSource('https://lmjbkeqjglahtuqbzyic.supabase.co/functions/v1/update-server', {
-    updateStrategy: 'fingerprint',
+  source: getUpdateSource(`${HOT_UPDATER_SUPABASE_URL}/functions/v1/update-server`, {
+    updateStrategy: 'appVersion',
   }),
   fallbackComponent: ({ progress, status }) => (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>{status === 'UPDATING' ? 'Updating...' : 'Checking...'}</Text>
+      <Text>{status === 'UPDATING' ? 'Updating...' : 'Checking12334...'}</Text>
       {progress > 0 && <Text>{Math.round(progress * 100)}%</Text>}
     </View>
   ),
