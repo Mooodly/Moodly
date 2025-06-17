@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@babel/runtime':
+        specifier: ^7.27.6
+        version: 7.27.6
       '@hot-updater/react-native':
         specifier: 0.19.4
         version: 0.19.4(hot-updater@0.19.3(@hot-updater/supabase@0.19.4(@types/node@24.0.3)(typescript@5.8.3))(@types/node@24.0.3)(solid-js@1.9.7)(typescript@5.8.3))(react-native@0.80.0(@babel/core@7.27.4)(@react-native-community/cli@18.0.0(typescript@5.8.3))(@types/react@19.1.8)(react@19.1.0))(react@19.1.0)
@@ -38,6 +41,9 @@ importers:
       react-native:
         specifier: 0.80.0
         version: 0.80.0(@babel/core@7.27.4)(@react-native-community/cli@18.0.0(typescript@5.8.3))(@types/react@19.1.8)(react@19.1.0)
+      react-native-css-interop:
+        specifier: ^0.1.22
+        version: 0.1.22(react-native-reanimated@3.18.0(@babel/core@7.27.4)(react-native@0.80.0(@babel/core@7.27.4)(@react-native-community/cli@18.0.0(typescript@5.8.3))(@types/react@19.1.8)(react@19.1.0))(react@19.1.0))(react-native-safe-area-context@5.4.1(react-native@0.80.0(@babel/core@7.27.4)(@react-native-community/cli@18.0.0(typescript@5.8.3))(@types/react@19.1.8)(react@19.1.0))(react@19.1.0))(react-native@0.80.0(@babel/core@7.27.4)(@react-native-community/cli@18.0.0(typescript@5.8.3))(@types/react@19.1.8)(react@19.1.0))(react@19.1.0)(tailwindcss@3.4.17)
       react-native-input-accessory-view:
         specifier: ^0.4.0
         version: 0.4.0(react-native-reanimated@3.18.0(@babel/core@7.27.4)(react-native@0.80.0(@babel/core@7.27.4)(@react-native-community/cli@18.0.0(typescript@5.8.3))(@types/react@19.1.8)(react@19.1.0))(react@19.1.0))(react-native-safe-area-context@5.4.1(react-native@0.80.0(@babel/core@7.27.4)(@react-native-community/cli@18.0.0(typescript@5.8.3))(@types/react@19.1.8)(react@19.1.0))(react@19.1.0))(react-native@0.80.0(@babel/core@7.27.4)(@react-native-community/cli@18.0.0(typescript@5.8.3))(@types/react@19.1.8)(react@19.1.0))(react@19.1.0)
