@@ -11,6 +11,7 @@ import com.facebook.react.defaults.DefaultReactHost.getDefaultReactHost
 import com.facebook.react.defaults.DefaultReactNativeHost
 import com.facebook.react.soloader.OpenSourceMergedSoMapping
 import com.facebook.soloader.SoLoader
+import com.hotupdater.HotUpdater
 
 class MainApplication : Application(), ReactApplication {
 
@@ -41,4 +42,7 @@ class MainApplication : Application(), ReactApplication {
       load()
     }
   }
+    override fun getJSBundleFile(): String? {
+        return HotUpdater.getJSBundleFile(applicationContext)
+    }
 }
