@@ -3,11 +3,11 @@ import { View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import DiaryList from '@/features/diary/ui/screen/DiaryList';
-import Home from '@/features/home/ui/screen/Home';
 import Setting from '@/features/setting/ui/screen/Setting';
 import { MAIN_ICONS } from '@/shared/assets/images/main';
 import { useScale } from '@/shared/hooks';
 import TabBarIcon from '@/shared/ui/elements/TabBarIcon';
+import Splash from '../ui/screens/Splash';
 
 export type BottomTabParamList = {
   홈: undefined;
@@ -40,7 +40,7 @@ const TabNavigation = () => {
       >
         <Tab.Screen
           name="홈"
-          component={Home}
+          component={Splash}
           options={{
             tabBarIcon: ({ focused }) => (
               <TabBarIcon source={focused ? MAIN_ICONS.homeActive : MAIN_ICONS.homeInactive} />
