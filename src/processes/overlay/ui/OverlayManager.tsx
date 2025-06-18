@@ -1,4 +1,4 @@
-import { setOverlayEventHandler } from '@/processes/overlay/model/overlaySlice';
+import { setOverlayEventHandler } from '@/features/overlay/model/overlay.slice';
 import { useAppDispatch, useAppSelector } from '@/shared/hooks';
 import { isNotEmpty } from '@/shared/lib';
 import DropDownAnimation from '@/widgets/dropdown/animation/DropDownAnimation';
