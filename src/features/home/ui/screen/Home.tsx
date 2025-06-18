@@ -1,6 +1,6 @@
 import { Button, Image, StatusBar, StyleSheet, View } from 'react-native';
 
-import { useInitializeDiary } from '@/features/diary/hooks/useInitializeDiary';
+import { useInitializeDiary } from '@/processes/diary/useInitializeDiary';
 import { MAIN_ICONS } from '@/shared/assets/images/main';
 import { getScaleSize, useAppSelector } from '@/shared/hooks';
 import { jumpToTab, navigate } from '@/shared/lib';

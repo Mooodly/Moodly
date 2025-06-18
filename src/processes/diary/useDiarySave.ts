@@ -1,9 +1,12 @@
 // useDiarySave.ts
 
+import {
+  addDiaryThunk,
+  modifyDiaryThunk,
+  setSelectedDiary,
+} from '@/features/diary/model/diary.slice';
 import { useAppDispatch, useAppSelector, useRealm } from '@/shared/hooks';
 import { isNotEmpty, navigate } from '@/shared/lib';
-
-import { addDiaryThunk, modifyDiaryThunk, setSelectedDiary } from '../model/diary.slice';
 
 export function useDiarySave(text: string) {
   const dispatch = useAppDispatch();

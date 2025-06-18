@@ -1,17 +1,16 @@
 import { useFocusEffect } from '@react-navigation/native';
 import { useCallback } from 'react';
 
-import { ICON_DATA } from '@/shared/constants';
-import { useAppDispatch, useRealm } from '@/shared/hooks';
-import { isNotEmpty } from '@/shared/lib';
-
 import {
   searchDiaryCountThunk,
   searchDiaryForDayThunk,
   setSelectedDiary,
   setSelectedIcon,
   setTodayDiary,
-} from '../model/diary.slice';
+} from '@/features/diary/model/diary.slice';
+import { ICON_DATA } from '@/shared/constants';
+import { useAppDispatch, useRealm } from '@/shared/hooks';
+import { isNotEmpty } from '@/shared/lib';
 
 export function useInitializeDiary() {
   const dispatch = useAppDispatch();
