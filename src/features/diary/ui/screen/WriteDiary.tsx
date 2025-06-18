@@ -17,10 +17,10 @@ import { H2 } from '@/shared/ui/typography/H2';
 import NaviDismiss from '@/widgets/navigation-bar/ui/NaviDismiss';
 import NavigationBar from '@/widgets/navigation-bar/ui/NavigationBar';
 
+import { useDiarySave } from '@/processes/diary/useDiarySave';
 import { isNotEmpty } from '@/shared/lib';
 import { common } from '@/shared/styles/colors';
 import { KeyboardAccessoryButton } from '@/shared/ui/elements/KeyboardAccessory';
-import { useDiarySave } from '../../hooks/useDiarySave';
 
 const actionButtons = [{ item: <NaviDismiss />, disabled: false }];
 

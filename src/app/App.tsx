@@ -11,15 +11,17 @@ import { navigationRef } from '@/shared/lib';
 import '../../global.css';
 
 import { HOT_UPDATER_SUPABASE_URL } from '@env';
-import { HotUpdater, getUpdateSource } from '@hot-updater/react-native';
+import { getUpdateSource, HotUpdater } from '@hot-updater/react-native';
+import { MotiView } from 'moti';
+import { remapProps } from 'nativewind';
 import { Text, View } from 'react-native';
 import RootStack from './navigation/RootStack';
 import store from './store';
 
 dayjs.locale('ko');
+remapProps(MotiView, { className: 'style' });
 
 enableScreens();
-
 //TEST: - 랜더링 테스트 로그 코드
 export const onRenderCallback: ProfilerOnRenderCallback = (
   id: string,

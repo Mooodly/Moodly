@@ -2,10 +2,12 @@ import { combineReducers, configureStore } from '@reduxjs/toolkit';
 
 import diarySlice from '@/features/diary/model/diary.slice';
 import overlaySlice from '@/features/overlay/model/overlay.slice';
+import progressSlice from '@/features/updateProgress/model/progress.slice';
 
 const reducers = combineReducers({
   overlaySlice: overlaySlice,
   diarySlice: diarySlice,
+  progressSlice: progressSlice,
 });
 
 export type RootState = ReturnType<typeof reducers>;
