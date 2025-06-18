@@ -1,7 +1,7 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 
 import diarySlice from '@/features/diary/model/diary.slice';
-import overlaySlice from '@/processes/overlay/model/overlaySlice';
+import overlaySlice from '@/features/overlay/model/overlay.slice';
 
 const reducers = combineReducers({
   overlaySlice: overlaySlice,

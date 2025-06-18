@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { Image, StyleSheet, View } from 'react-native';
 
-import { setShowToastView } from '@/processes/overlay/model/overlaySlice';
+import { setShowToastView } from '@/features/overlay/model/overlay.slice';
 import { MAIN_ICONS } from '@/shared/assets/images/main';
 import { getScaleSize, useAppDispatch, useAppSelector } from '@/shared/hooks';
 import { dismissModalToScreen, navigate } from '@/shared/lib';
