@@ -5,6 +5,7 @@ import { defineConfig } from 'hot-updater';
 
 export default defineConfig({
   build: bare({ enableHermes: true }),
+  updateStrategy: 'appVersion',
   storage: supabaseStorage({
     supabaseUrl: process.env.HOT_UPDATER_SUPABASE_URL!,
     supabaseAnonKey: process.env.HOT_UPDATER_SUPABASE_ANON_KEY!,
