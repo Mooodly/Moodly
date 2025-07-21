@@ -5,6 +5,12 @@ env:
   SCHEME: MoodlyFrontend
 
 on:
+  workflow_dispatch:
+    inputs:
+      git-ref:
+        description: '빌드할 ref (tag, SHA, branch)'
+        required: false
+        default: feature/sunggyu-250721-001-fastlane_cicd
   push:
     branches:
       - main
@@ -98,8 +104,8 @@ jobs:
           yarn hot-updater deploy -p ios -t '1.0.x' $FLAG
 
   ios-testflight:
-    needs: deploy-ota
-    if: ${{ needs.deploy-ota.outputs.EXIT != '0' }}
+    # needs: deploy-ota
+    # if: ${{ needs.deploy-ota.outputs.EXIT != '0' }}
     runs-on: macos-latest
     permissions:
       contents: read
