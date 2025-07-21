@@ -15,7 +15,7 @@
         "reasons": [
           "bareNativeDir"
         ],
-        "hash": null
+        "hash": "2e53aeab15af321dfc4e582c2de5691b6d068a7d"
       },
       {
         "type": "dir",
@@ -165,7 +165,7 @@
         "hash": "cc6139fb2c576663c2046830e7c6f473d94db598"
       }
     ],
-    "hash": "22c65c26574ea290c733648e1c9eabd0a9055890"
+    "hash": "d365acb25ddee9e64eea69086bc23c77220348a5"
   },
   "android": {
     "sources": [
@@ -183,7 +183,7 @@
         "reasons": [
           "bareNativeDir"
         ],
-        "hash": null
+        "hash": "62b72c8fc22554e81f63c3e893958d2dedcd3521"
       },
       {
         "type": "dir",
@@ -333,6 +333,6 @@
         "hash": "cc6139fb2c576663c2046830e7c6f473d94db598"
       }
     ],
-    "hash": "22c65c26574ea290c733648e1c9eabd0a9055890"
+    "hash": "550c61546f1f2745722d43330a87dab3b20bdc1a"
   }
 }
