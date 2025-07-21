@@ -13,20 +13,45 @@
 # Uncomment the line if you want fastlane to automatically update itself
 # update_fastlane
 
-default_platform(:ios)
+ios_derived_data = "#{Dir.pwd}/DerivedData"
+
+default_platform :ios
 
 platform :ios do
   desc "Push a new beta build to TestFlight"
   lane :beta do |options|
     sync_code_signing(
-      type: "appstore",
-      app_identifier: 'com.moodly.diary.emotion',
-      readonly: true
+      type:            "development",
+      git_url:         "git@github.com:sunggyu-jeong/fastlane-certs.git",
+      app_identifier:  "com.moodly.diary.emotion",
+      readonly:        false,
+      force_for_new_certificates: true
     )
-    updateVersion(options)
+    
+    sync_code_signing(
+      type:                    "appstore",
+      git_url:                 "git@github.com:sunggyu-jeong/fastlane-certs.git",
+      app_identifier:          "com.moodly.diary.emotion",
+      readonly:                false,
+      force_for_new_certificates: true
+    )
+
+    if options[:version]
+      increment_version_number(
+        version_number: options[:version],
+        xcodeproj:      "MoodlyFrontend.xcodeproj"
+      )
+    end
 
     increment_build_number(xcodeproj: "MoodlyFrontend.xcodeproj")
-    build_app(workspace: "MoodlyFrontend.xcworkspace", scheme: "MoodlyFrontend")
+    build_app(
+      workspace: "MoodlyFrontend.xcworkspace",
+      scheme:    "MoodlyFrontend",
+      configuration: "Release",
+      export_method: "app-store",
+      derived_data_path: ios_derived_data,
+      clean:false
+    )
     upload_to_testflight
   end
 end

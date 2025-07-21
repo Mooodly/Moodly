@@ -1,4 +1,4 @@
-git_url("https://github.com/sunggyu-jeong/Moodly")
+git_url("git@github.com:sunggyu-jeong/fastlane-certs.git")
 
 storage_mode("git")
 
