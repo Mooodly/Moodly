@@ -15,6 +15,6 @@ export default defineConfig({
     supabaseAnonKey: process.env.HOT_UPDATER_SUPABASE_ANON_KEY!,
   }),
   fingerprint: {
-    ignorePaths: ['node_modules/**'],
+    ignorePaths: ['node_modules/**', 'ios/**', 'android/**'],
   },
 });
