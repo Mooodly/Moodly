@@ -1,4 +1,5 @@
-name: Moodly HotUpdater CI/CD
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow
+name: Moodly CI/CD
 
 on:
   push:
@@ -6,11 +7,14 @@ on:
 
 permissions:
   contents: write
-  
+
 jobs:
   deploy-ota:
     if: contains(github.event.head_commit.message, '[hot-update]')
     runs-on: ubuntu-latest
+
+    outputs:
+      EXIT: ${{ steps.fp.outputs.EXIT }}
 
     env:
       HOT_UPDATER_SUPABASE_URL: ${{ secrets.HOT_UPDATER_SUPABASE_URL }}
@@ -54,7 +58,7 @@ jobs:
 
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        
+
           git add -A
           if ! git diff --cached --quiet; then
             git commit -m "feat. fingerprint 프로젝트 동기화"
@@ -87,3 +91,34 @@ jobs:
           # 3) 실제 배포
           yarn hot-updater deploy -p android $FLAG
           yarn hot-updater deploy -p ios -t '1.0.x' $FLAG
+
+  ios-testflight:
+    needs: deploy-ota
+    if: ${{ needs.deploy-ota.outputs.EXIT != '0' }}
+    runs-on: macos-latest
+    permissions:
+      contents: read
+      id-token: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Ruby & Fastlane
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+
+      - name: Install Dependencies
+        run: bundle install
+
+      - name: Build & Upload to TestFlight
+        env:
+          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+          ASC_KEY: ${{ secrets.ASC_PRIVATE_KEY }}
+          MATCH_PASSWORD: ${{ secrets.MATCH_PASSWORD }}
+          MATCH_GIT_PRIVATE_KEY: ${{ secrets.MATCH_GIT_PRIVATE_KEY }}
+        run: bundle exec fastlane ios build_upload_testflight
