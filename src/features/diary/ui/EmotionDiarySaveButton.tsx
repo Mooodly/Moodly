@@ -1,5 +1,5 @@
 import { useAppDispatch, useAppSelector } from '@shared/hooks';
-import { isNotEmpty, navigate } from '@shared/lib';
+import { isNotEmpty, resetTo } from '@shared/lib';
 import { KeyboardAccessoryButton } from '@shared/ui/elements/KeyboardAccessory';
 import { useEffect } from 'react';
 import { useDiaryMutation } from '../hooks/useDiaryMutation';
@@ -18,7 +18,7 @@ export function DiarySaveButton(text: string) {
         emotionId: result,
       };
       dispatch(setSelectedDiary(diary));
-      navigate('DiaryStack', { screen: 'Complete' });
+      resetTo('DiaryStack', { screen: 'Complete' });
     }
   }, [result, dispatch, text, todayDiary]);
 
