@@ -24,7 +24,7 @@ platform :ios do
       type:            "development",
       git_url:         "git@github.com:sunggyu-jeong/fastlane-certs.git",
       app_identifier:  "com.moodly.diary.emotion",
-      readonly:        false,
+      readonly:        true,
       force_for_new_certificates: true
     )
     
@@ -32,7 +32,7 @@ platform :ios do
       type:                    "appstore",
       git_url:                 "git@github.com:sunggyu-jeong/fastlane-certs.git",
       app_identifier:          "com.moodly.diary.emotion",
-      readonly:                false,
+      readonly:                true,
       force_for_new_certificates: true
     )
 
