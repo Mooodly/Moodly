@@ -302,7 +302,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.moodly.diary.emotion;
 				PRODUCT_NAME = MoodlyFrontend;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match Development com.moodly.diary.emotion";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match Development com.moodly.diary.emotion 1753410166";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -342,7 +342,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.moodly.diary.emotion;
 				PRODUCT_NAME = MoodlyFrontend;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match Development com.moodly.diary.emotion";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match Development com.moodly.diary.emotion 1753410166";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
