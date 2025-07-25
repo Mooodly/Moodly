@@ -16,6 +16,8 @@ use_frameworks! :linkage => linkage.to_sym
 
 require_relative '../node_modules/react-native-permissions/scripts/setup'
 
+hermes_enabled => true
+
 setup_permissions([
   'Notifications',
 ])

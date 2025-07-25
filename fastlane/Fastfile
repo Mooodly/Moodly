@@ -39,13 +39,13 @@ platform :ios do
     if options[:version]
       increment_version_number(
         version_number: options[:version],
-        xcodeproj:      "MoodlyFrontend.xcodeproj"
+        xcodeproj:      "ios/MoodlyFrontend.xcodeproj"
       )
     end
 
-    increment_build_number(xcodeproj: "MoodlyFrontend.xcodeproj")
+    increment_build_number(xcodeproj: "ios/MoodlyFrontend.xcodeproj")
     build_app(
-      workspace: "MoodlyFrontend.xcworkspace",
+      workspace: "ios/MoodlyFrontend.xcworkspace",
       scheme:    "MoodlyFrontend",
       configuration: "Release",
       export_method: "app-store",

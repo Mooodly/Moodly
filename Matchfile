@@ -1,5 +1,6 @@
 git_url("git@github.com:sunggyu-jeong/fastlane-certs.git")
 
+force_legacy_encryption(true) 
 storage_mode("git")
 
 type("development") # The default type, can be: appstore, adhoc, enterprise or development

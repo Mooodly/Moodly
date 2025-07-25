@@ -13,4 +13,5 @@ config.resolver.alias = {
 
 module.exports = withNativeWind(config, {
   input: path.resolve(__dirname, 'global.css'),
+  server: { stickyWorkers: true },
 });
