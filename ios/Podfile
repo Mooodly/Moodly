@@ -15,27 +15,32 @@ prepare_react_native_project!
 linkage = ENV['USE_FRAMEWORKS'] || 'static'
 use_frameworks! :linkage => linkage.to_sym
 
-target 'MoodlyFrontend' do
+target 'Moodly' do
   config = use_native_modules!
 
-  setup_permissions([
-    'Notifications',
-  ]);
-
-  pod 'FirebaseAuth'
-  pod 'FirebaseFirestore'
-  pod 'GTMSessionFetcher/Core', '~> 3.4'
-
   use_react_native!(
-    :path => config[:reactNativePath]
+    :path => config[:reactNativePath],
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
+end
 
-  post_install do |installer|
-    react_native_post_install(
-      installer,
-      config[:reactNativePath],
-      :mac_catalyst_enabled => false
-    )
+target 'Moodly-Dev' do
+  config = use_native_modules!
+
+  use_react_native!(
+    :path => config[:reactNativePath],
+    :app_path => "#{Pod::Config.instance.installation_root}/.."
+  )
+end
+
+post_install do |installer|
+  react_native_post_install(installer)
+
+  installer.pods_project.targets.each do |target|
+    if ['Moodly', 'Moodly-Dev'].include? target.name
+      target.build_configurations.each do |config|
+        config.build_settings['SWIFT_VERSION'] = '5.0'
+      end
+    end
   end
 end

@@ -1,3 +1,4 @@
+import { GOOGLE_WEB_CLIENT_ID } from '@env';
 import appleAuth from '@invertase/react-native-apple-authentication';
 import { GoogleSignin, type User } from '@react-native-google-signin/google-signin';
 import { isEmpty } from '@shared';
@@ -11,7 +12,7 @@ import type { SetUserInfoInput, SignInProviderInput, UserInfo } from '../model/a
 export async function getGoogleToken() {
   await GoogleSignin.hasPlayServices();
   GoogleSignin.configure({
-    webClientId: process.env.GOOGLE_WEB_CLIENT_ID!,
+    webClientId: GOOGLE_WEB_CLIENT_ID,
   });
   await GoogleSignin.signIn();
   const { idToken: token } = await GoogleSignin.getTokens();

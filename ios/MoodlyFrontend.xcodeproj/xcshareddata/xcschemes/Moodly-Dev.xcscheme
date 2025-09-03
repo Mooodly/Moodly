@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1210"
-   version = "1.3">
+   LastUpgradeVersion = "1620"
+   version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
-      buildImplicitDependencies = "YES">
+      buildImplicitDependencies = "YES"
+      buildArchitectures = "Automatic">
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"
@@ -14,9 +15,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "MoodlyFrontend.app"
-               BlueprintName = "Moodly"
+               BlueprintIdentifier = "5758FE2E2E682F7C00DD2CAE"
+               BuildableName = "Moodly-Dev.app"
+               BlueprintName = "Moodly-Dev"
                ReferencedContainer = "container:MoodlyFrontend.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,24 +27,13 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
-      <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "MoodlyFrontendTests.xctest"
-               BlueprintName = "MoodlyFrontendTests"
-               ReferencedContainer = "container:MoodlyFrontend.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-      </Testables>
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      shouldAutocreateTestPlan = "YES">
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Release"
-      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
-      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = ""
+      selectedLauncherIdentifier = "Xcode.IDEFoundation.Launcher.PosixSpawn"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -54,16 +44,16 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "MoodlyFrontend.app"
-            BlueprintName = "Moodly"
+            BlueprintIdentifier = "5758FE2E2E682F7C00DD2CAE"
+            BuildableName = "Moodly-Dev.app"
+            BlueprintName = "Moodly-Dev"
             ReferencedContainer = "container:MoodlyFrontend.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <EnvironmentVariables>
          <EnvironmentVariable
             key = "NODE_ENV"
-            value = "production"
+            value = "development"
             isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>
@@ -78,9 +68,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "MoodlyFrontend.app"
-            BlueprintName = "Moodly"
+            BlueprintIdentifier = "5758FE2E2E682F7C00DD2CAE"
+            BuildableName = "Moodly-Dev.app"
+            BlueprintName = "Moodly-Dev"
             ReferencedContainer = "container:MoodlyFrontend.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -89,7 +79,7 @@
       buildConfiguration = "Debug">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Debug"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

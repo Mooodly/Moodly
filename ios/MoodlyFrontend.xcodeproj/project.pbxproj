@@ -7,45 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09926B6611184FB807B1411E /* Pods_MoodlyFrontend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2A545AF264383406ED3D57 /* Pods_MoodlyFrontend.framework */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		14B16777D660FD6E731758E1 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 		1D098D3E5E0F4EDAA5B6F118 /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6F4AB07BA289499F98CEA923 /* Pretendard-Black.otf */; };
 		52EB501D34814D11ADCB2AE0 /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6219029BE72F4D55986B0E6E /* Pretendard-ExtraLight.otf */; };
+		5758FE312E682F7C00DD2CAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
+		5758FE352E682F7C00DD2CAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		5758FE362E682F7C00DD2CAE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57E6D1712E0A6BD00082CB88 /* GoogleService-Info.plist */; };
+		5758FE372E682F7C00DD2CAE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		5758FE382E682F7C00DD2CAE /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		5758FE392E682F7C00DD2CAE /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6F4AB07BA289499F98CEA923 /* Pretendard-Black.otf */; };
+		5758FE3A2E682F7C00DD2CAE /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B6E565443F7640888A8643BB /* Pretendard-Bold.otf */; };
+		5758FE3B2E682F7C00DD2CAE /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E81DF7B77D644C3F8DD478E4 /* Pretendard-ExtraBold.otf */; };
+		5758FE3C2E682F7C00DD2CAE /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6219029BE72F4D55986B0E6E /* Pretendard-ExtraLight.otf */; };
+		5758FE3D2E682F7C00DD2CAE /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C407F36FB2D74A049B3763F5 /* Pretendard-Light.otf */; };
+		5758FE3E2E682F7C00DD2CAE /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BEEC3FEEC1D4B129D4743E3 /* Pretendard-Medium.otf */; };
+		5758FE3F2E682F7C00DD2CAE /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0AF897487F0947CD8DF46CDF /* Pretendard-Regular.otf */; };
+		5758FE402E682F7C00DD2CAE /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8F8C3676CF9249FFA4E45355 /* Pretendard-SemiBold.otf */; };
+		5758FE412E682F7C00DD2CAE /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 58ED261F5F4E43F385405F91 /* Pretendard-Thin.otf */; };
 		57E6D1722E0A6BD00082CB88 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57E6D1712E0A6BD00082CB88 /* GoogleService-Info.plist */; };
+		5A237A1231F93B7D05D6D71B /* Pods_Moodly_Dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B34F491469D876F6B538D003 /* Pods_Moodly_Dev.framework */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		7C569F5C7BB74E2597CCC3B6 /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E81DF7B77D644C3F8DD478E4 /* Pretendard-ExtraBold.otf */; };
 		7D4DB33C9BB0467F8D0A5BDB /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BEEC3FEEC1D4B129D4743E3 /* Pretendard-Medium.otf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		82CB1A98F3BD482EBB7B4198 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8F8C3676CF9249FFA4E45355 /* Pretendard-SemiBold.otf */; };
 		997A3CB778D34660B31F55EB /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0AF897487F0947CD8DF46CDF /* Pretendard-Regular.otf */; };
+		A4A61170D4577134D4E3F60E /* Pods_Moodly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F70B3F86A9DACC78EEA246F9 /* Pods_Moodly.framework */; };
 		B1847261EB4E4E42AF4428E0 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B6E565443F7640888A8643BB /* Pretendard-Bold.otf */; };
 		E990AE6F972840F1A25881DC /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 58ED261F5F4E43F385405F91 /* Pretendard-Thin.otf */; };
 		F78C238B20B44AFB98774C12 /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C407F36FB2D74A049B3763F5 /* Pretendard-Light.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0A2A545AF264383406ED3D57 /* Pods_MoodlyFrontend.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoodlyFrontend.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF897487F0947CD8DF46CDF /* Pretendard-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Pretendard-Regular.otf"; path = "../src/shared/assets/fonts/Pretendard-Regular.otf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* MoodlyFrontend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodlyFrontend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = MoodlyFrontend/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MoodlyFrontend/Info.plist; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = MoodlyFrontend/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		1A4AA8005DBD0994650AF250 /* Pods-Moodly-Dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moodly-Dev.debug.xcconfig"; path = "Target Support Files/Pods-Moodly-Dev/Pods-Moodly-Dev.debug.xcconfig"; sourceTree = "<group>"; };
+		24EB3150E1732AA8A87B7587 /* Pods-Moodly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moodly.debug.xcconfig"; path = "Target Support Files/Pods-Moodly/Pods-Moodly.debug.xcconfig"; sourceTree = "<group>"; };
 		4BEEC3FEEC1D4B129D4743E3 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Pretendard-Medium.otf"; path = "../src/shared/assets/fonts/Pretendard-Medium.otf"; sourceTree = "<group>"; };
 		5704B3D62E0282E000948E2C /* MoodlyFrontend.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = MoodlyFrontend.entitlements; path = MoodlyFrontend/MoodlyFrontend.entitlements; sourceTree = "<group>"; };
+		5758FE492E682F7C00DD2CAE /* Moodly-Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Moodly-Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5758FE4A2E682F7D00DD2CAE /* MoodlyFrontend copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MoodlyFrontend copy-Info.plist"; path = "/Users/jeong/Work/06.moodly/Moodly/ios/MoodlyFrontend copy-Info.plist"; sourceTree = "<absolute>"; };
 		57E6D1712E0A6BD00082CB88 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		58ED261F5F4E43F385405F91 /* Pretendard-Thin.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Pretendard-Thin.otf"; path = "../src/shared/assets/fonts/Pretendard-Thin.otf"; sourceTree = "<group>"; };
 		6219029BE72F4D55986B0E6E /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Pretendard-ExtraLight.otf"; path = "../src/shared/assets/fonts/Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
 		6F4AB07BA289499F98CEA923 /* Pretendard-Black.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Pretendard-Black.otf"; path = "../src/shared/assets/fonts/Pretendard-Black.otf"; sourceTree = "<group>"; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = MoodlyFrontend/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = MoodlyFrontend/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		83A0C5A084206646DFC99D86 /* Pods-Moodly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moodly.release.xcconfig"; path = "Target Support Files/Pods-Moodly/Pods-Moodly.release.xcconfig"; sourceTree = "<group>"; };
 		8F8C3676CF9249FFA4E45355 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Pretendard-SemiBold.otf"; path = "../src/shared/assets/fonts/Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
 		921BCB31129A890BC25C451D /* Pods-MoodlyFrontend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoodlyFrontend.release.xcconfig"; path = "Target Support Files/Pods-MoodlyFrontend/Pods-MoodlyFrontend.release.xcconfig"; sourceTree = "<group>"; };
+		9D39C73DB4D506B3408E0CBF /* Pods-Moodly-Dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moodly-Dev.release.xcconfig"; path = "Target Support Files/Pods-Moodly-Dev/Pods-Moodly-Dev.release.xcconfig"; sourceTree = "<group>"; };
+		B34F491469D876F6B538D003 /* Pods_Moodly_Dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moodly_Dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E565443F7640888A8643BB /* Pretendard-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Pretendard-Bold.otf"; path = "../src/shared/assets/fonts/Pretendard-Bold.otf"; sourceTree = "<group>"; };
 		C407F36FB2D74A049B3763F5 /* Pretendard-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Pretendard-Light.otf"; path = "../src/shared/assets/fonts/Pretendard-Light.otf"; sourceTree = "<group>"; };
 		E81DF7B77D644C3F8DD478E4 /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Pretendard-ExtraBold.otf"; path = "../src/shared/assets/fonts/Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F5723CD91D2775DF838E57B1 /* Pods-MoodlyFrontend.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoodlyFrontend.debug.xcconfig"; path = "Target Support Files/Pods-MoodlyFrontend/Pods-MoodlyFrontend.debug.xcconfig"; sourceTree = "<group>"; };
+		F70B3F86A9DACC78EEA246F9 /* Pods_Moodly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moodly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +75,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09926B6611184FB807B1411E /* Pods_MoodlyFrontend.framework in Frameworks */,
+				A4A61170D4577134D4E3F60E /* Pods_Moodly.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5758FE322E682F7C00DD2CAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A237A1231F93B7D05D6D71B /* Pods_Moodly_Dev.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				0A2A545AF264383406ED3D57 /* Pods_MoodlyFrontend.framework */,
+				F70B3F86A9DACC78EEA246F9 /* Pods_Moodly.framework */,
+				B34F491469D876F6B538D003 /* Pods_Moodly_Dev.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -99,6 +130,7 @@
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
 				B5822CD2114F491781B7DFD3 /* Resources */,
+				5758FE4A2E682F7D00DD2CAE /* MoodlyFrontend copy-Info.plist */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -109,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				13B07F961A680F5B00A75B9A /* MoodlyFrontend.app */,
+				5758FE492E682F7C00DD2CAE /* Moodly-Dev.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,6 +167,10 @@
 			children = (
 				F5723CD91D2775DF838E57B1 /* Pods-MoodlyFrontend.debug.xcconfig */,
 				921BCB31129A890BC25C451D /* Pods-MoodlyFrontend.release.xcconfig */,
+				24EB3150E1732AA8A87B7587 /* Pods-Moodly.debug.xcconfig */,
+				83A0C5A084206646DFC99D86 /* Pods-Moodly.release.xcconfig */,
+				1A4AA8005DBD0994650AF250 /* Pods-Moodly-Dev.debug.xcconfig */,
+				9D39C73DB4D506B3408E0CBF /* Pods-Moodly-Dev.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -141,9 +178,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		13B07F861A680F5B00A75B9A /* MoodlyFrontend */ = {
+		13B07F861A680F5B00A75B9A /* Moodly */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "MoodlyFrontend" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Moodly" */;
 			buildPhases = (
 				8145B6B3D8B4ECE016534C75 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
@@ -158,9 +195,31 @@
 			);
 			dependencies = (
 			);
-			name = MoodlyFrontend;
+			name = Moodly;
 			productName = MoodlyFrontend;
 			productReference = 13B07F961A680F5B00A75B9A /* MoodlyFrontend.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5758FE2E2E682F7C00DD2CAE /* Moodly-Dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5758FE462E682F7C00DD2CAE /* Build configuration list for PBXNativeTarget "Moodly-Dev" */;
+			buildPhases = (
+				5758FE2F2E682F7C00DD2CAE /* [CP] Check Pods Manifest.lock */,
+				5758FE302E682F7C00DD2CAE /* Sources */,
+				5758FE322E682F7C00DD2CAE /* Frameworks */,
+				5758FE342E682F7C00DD2CAE /* Resources */,
+				5758FE422E682F7C00DD2CAE /* Bundle React Native code and images */,
+				5758FE432E682F7C00DD2CAE /* [CP] Copy Pods Resources */,
+				5758FE442E682F7C00DD2CAE /* [CP-User] [RNFB] Core Configuration */,
+				5758FE452E682F7C00DD2CAE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Moodly-Dev";
+			productName = MoodlyFrontend;
+			productReference = 5758FE492E682F7C00DD2CAE /* Moodly-Dev.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -189,7 +248,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* MoodlyFrontend */,
+				13B07F861A680F5B00A75B9A /* Moodly */,
+				5758FE2E2E682F7C00DD2CAE /* Moodly-Dev */,
 			);
 		};
 /* End PBXProject section */
@@ -212,6 +272,26 @@
 				997A3CB778D34660B31F55EB /* Pretendard-Regular.otf in Resources */,
 				82CB1A98F3BD482EBB7B4198 /* Pretendard-SemiBold.otf in Resources */,
 				E990AE6F972840F1A25881DC /* Pretendard-Thin.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5758FE342E682F7C00DD2CAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5758FE352E682F7C00DD2CAE /* LaunchScreen.storyboard in Resources */,
+				5758FE362E682F7C00DD2CAE /* GoogleService-Info.plist in Resources */,
+				5758FE372E682F7C00DD2CAE /* Images.xcassets in Resources */,
+				5758FE382E682F7C00DD2CAE /* PrivacyInfo.xcprivacy in Resources */,
+				5758FE392E682F7C00DD2CAE /* Pretendard-Black.otf in Resources */,
+				5758FE3A2E682F7C00DD2CAE /* Pretendard-Bold.otf in Resources */,
+				5758FE3B2E682F7C00DD2CAE /* Pretendard-ExtraBold.otf in Resources */,
+				5758FE3C2E682F7C00DD2CAE /* Pretendard-ExtraLight.otf in Resources */,
+				5758FE3D2E682F7C00DD2CAE /* Pretendard-Light.otf in Resources */,
+				5758FE3E2E682F7C00DD2CAE /* Pretendard-Medium.otf in Resources */,
+				5758FE3F2E682F7C00DD2CAE /* Pretendard-Regular.otf in Resources */,
+				5758FE402E682F7C00DD2CAE /* Pretendard-SemiBold.otf in Resources */,
+				5758FE412E682F7C00DD2CAE /* Pretendard-Thin.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,15 +320,100 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MoodlyFrontend/Pods-MoodlyFrontend-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Moodly/Pods-Moodly-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MoodlyFrontend/Pods-MoodlyFrontend-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Moodly/Pods-Moodly-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MoodlyFrontend/Pods-MoodlyFrontend-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Moodly/Pods-Moodly-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5758FE2F2E682F7C00DD2CAE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Moodly-Dev-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5758FE422E682F7C00DD2CAE /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/.xcode.env",
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\n# 1) Node 바이너리 위치를 명시적으로 지정\nexport NODE_BINARY=$(which node)\n\n# 2) React Native 모듈 경로를 Xcode 프로젝트 기준으로 맞춰줍니다.\n#    SRCROOT 은 .xcodeproj 파일이 있는 폴더를 가리킵니다.\nexport REACT_NATIVE_DIR=\"${SRCROOT}/../node_modules/react-native\"\n\n# 3) with-environment, react-native-xcode 스크립트 경로\nexport WITH_ENVIRONMENT=\"$REACT_NATIVE_DIR/scripts/xcode/with-environment.sh\"\nexport REACT_NATIVE_XCODE=\"$REACT_NATIVE_DIR/scripts/react-native-xcode.sh\"\n\n# 4) 실제 번들링 실행\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+		};
+		5758FE432E682F7C00DD2CAE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Moodly-Dev/Pods-Moodly-Dev-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Moodly-Dev/Pods-Moodly-Dev-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Moodly-Dev/Pods-Moodly-Dev-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5758FE442E682F7C00DD2CAE /* [CP-User] [RNFB] Core Configuration */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "[CP-User] [RNFB] Core Configuration";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/usr/bin/env bash\n#\n# Copyright (c) 2016-present Invertase Limited & Contributors\n#\n# Licensed under the Apache License, Version 2.0 (the \"License\");\n# you may not use this library except in compliance with the License.\n# You may obtain a copy of the License at\n#\n#   http://www.apache.org/licenses/LICENSE-2.0\n#\n# Unless required by applicable law or agreed to in writing, software\n# distributed under the License is distributed on an \"AS IS\" BASIS,\n# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n# See the License for the specific language governing permissions and\n# limitations under the License.\n#\n\n##########################################################################\n##########################################################################\n#\n#  NOTE THAT IF YOU CHANGE THIS FILE YOU MUST RUN pod install AFTERWARDS\n#\n#  This file is installed as an Xcode build script in the project file\n#  by cocoapods, and you will not see your changes until you pod install\n#\n##########################################################################\n##########################################################################\n\nset -e\n\n_MAX_LOOKUPS=2;\n_SEARCH_RESULT=''\n_RN_ROOT_EXISTS=''\n_CURRENT_LOOKUPS=1\n_JSON_ROOT=\"'react-native'\"\n_JSON_FILE_NAME='firebase.json'\n_JSON_OUTPUT_BASE64='e30=' # { }\n_CURRENT_SEARCH_DIR=${PROJECT_DIR}\n_PLIST_BUDDY=/usr/libexec/PlistBuddy\n_TARGET_PLIST=\"${BUILT_PRODUCTS_DIR}/${INFOPLIST_PATH}\"\n_DSYM_PLIST=\"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist\"\n\n# plist arrays\n_PLIST_ENTRY_KEYS=()\n_PLIST_ENTRY_TYPES=()\n_PLIST_ENTRY_VALUES=()\n\nfunction setPlistValue {\n  echo \"info:      setting plist entry '$1' of type '$2' in file '$4'\"\n  ${_PLIST_BUDDY} -c \"Add :$1 $2 '$3'\" $4 || echo \"info:      '$1' already exists\"\n}\n\nfunction getFirebaseJsonKeyValue () {\n  if [[ ${_RN_ROOT_EXISTS} ]]; then\n    ruby -Ku -e \"require 'rubygems';require 'json'; output=JSON.parse('$1'); puts output[$_JSON_ROOT]['$2']\"\n  else\n    echo \"\"\n  fi;\n}\n\nfunction jsonBoolToYesNo () {\n  if [[ $1 == \"false\" ]]; then\n    echo \"NO\"\n  elif [[ $1 == \"true\" ]]; then\n    echo \"YES\"\n  else echo \"NO\"\n  fi\n}\n\necho \"info: -> RNFB build script started\"\necho \"info: 1) Locating ${_JSON_FILE_NAME} file:\"\n\nif [[ -z ${_CURRENT_SEARCH_DIR} ]]; then\n  _CURRENT_SEARCH_DIR=$(pwd)\nfi;\n\nwhile true; do\n  _CURRENT_SEARCH_DIR=$(dirname \"$_CURRENT_SEARCH_DIR\")\n  if [[ \"$_CURRENT_SEARCH_DIR\" == \"/\" ]] || [[ ${_CURRENT_LOOKUPS} -gt ${_MAX_LOOKUPS} ]]; then break; fi;\n  echo \"info:      ($_CURRENT_LOOKUPS of $_MAX_LOOKUPS) Searching in '$_CURRENT_SEARCH_DIR' for a ${_JSON_FILE_NAME} file.\"\n  _SEARCH_RESULT=$(find \"$_CURRENT_SEARCH_DIR\" -maxdepth 2 -name ${_JSON_FILE_NAME} -print | /usr/bin/head -n 1)\n  if [[ ${_SEARCH_RESULT} ]]; then\n    echo \"info:      ${_JSON_FILE_NAME} found at $_SEARCH_RESULT\"\n    break;\n  fi;\n  _CURRENT_LOOKUPS=$((_CURRENT_LOOKUPS+1))\ndone\n\nif [[ ${_SEARCH_RESULT} ]]; then\n  _JSON_OUTPUT_RAW=$(cat \"${_SEARCH_RESULT}\")\n  _RN_ROOT_EXISTS=$(ruby -Ku -e \"require 'rubygems';require 'json'; output=JSON.parse('$_JSON_OUTPUT_RAW'); puts output[$_JSON_ROOT]\" || echo '')\n\n  if [[ ${_RN_ROOT_EXISTS} ]]; then\n    if ! python3 --version >/dev/null 2>&1; then echo \"python3 not found, firebase.json file processing error.\" && exit 1; fi\n    _JSON_OUTPUT_BASE64=$(python3 -c 'import json,sys,base64;print(base64.b64encode(bytes(json.dumps(json.loads(open('\"'${_SEARCH_RESULT}'\"', '\"'rb'\"').read())['${_JSON_ROOT}']), '\"'utf-8'\"')).decode())' || echo \"e30=\")\n  fi\n\n  _PLIST_ENTRY_KEYS+=(\"firebase_json_raw\")\n  _PLIST_ENTRY_TYPES+=(\"string\")\n  _PLIST_ENTRY_VALUES+=(\"$_JSON_OUTPUT_BASE64\")\n\n  # config.app_data_collection_default_enabled\n  _APP_DATA_COLLECTION_ENABLED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"app_data_collection_default_enabled\")\n  if [[ $_APP_DATA_COLLECTION_ENABLED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseDataCollectionDefaultEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_APP_DATA_COLLECTION_ENABLED\")\")\n  fi\n\n  # config.analytics_auto_collection_enabled\n  _ANALYTICS_AUTO_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_auto_collection_enabled\")\n  if [[ $_ANALYTICS_AUTO_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FIREBASE_ANALYTICS_COLLECTION_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_AUTO_COLLECTION\")\")\n  fi\n\n  # config.analytics_collection_deactivated\n  _ANALYTICS_DEACTIVATED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_collection_deactivated\")\n  if [[ $_ANALYTICS_DEACTIVATED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FIREBASE_ANALYTICS_COLLECTION_DEACTIVATED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_DEACTIVATED\")\")\n  fi\n\n  # config.analytics_idfv_collection_enabled\n  _ANALYTICS_IDFV_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_idfv_collection_enabled\")\n  if [[ $_ANALYTICS_IDFV_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_IDFV_COLLECTION_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_IDFV_COLLECTION\")\")\n  fi\n\n  # config.analytics_default_allow_analytics_storage\n  _ANALYTICS_STORAGE=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_default_allow_analytics_storage\")\n  if [[ $_ANALYTICS_STORAGE ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_DEFAULT_ALLOW_ANALYTICS_STORAGE\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_STORAGE\")\")\n  fi\n\n  # config.analytics_default_allow_ad_storage\n  _ANALYTICS_AD_STORAGE=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_default_allow_ad_storage\")\n  if [[ $_ANALYTICS_AD_STORAGE ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_DEFAULT_ALLOW_AD_STORAGE\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_AD_STORAGE\")\")\n  fi\n\n  # config.analytics_default_allow_ad_user_data\n  _ANALYTICS_AD_USER_DATA=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_default_allow_ad_user_data\")\n  if [[ $_ANALYTICS_AD_USER_DATA ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_DEFAULT_ALLOW_AD_USER_DATA\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_AD_USER_DATA\")\")\n  fi\n\n  # config.analytics_default_allow_ad_personalization_signals\n  _ANALYTICS_PERSONALIZATION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_default_allow_ad_personalization_signals\")\n  if [[ $_ANALYTICS_PERSONALIZATION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_DEFAULT_ALLOW_AD_PERSONALIZATION_SIGNALS\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_PERSONALIZATION\")\")\n  fi\n\n  # config.analytics_registration_with_ad_network_enabled\n  _ANALYTICS_REGISTRATION_WITH_AD_NETWORK=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"google_analytics_registration_with_ad_network_enabled\")\n  if [[ $_ANALYTICS_REGISTRATION_WITH_AD_NETWORK ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_REGISTRATION_WITH_AD_NETWORK_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_REGISTRATION_WITH_AD_NETWORK\")\")\n  fi\n\n  # config.google_analytics_automatic_screen_reporting_enabled\n  _ANALYTICS_AUTO_SCREEN_REPORTING=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"google_analytics_automatic_screen_reporting_enabled\")\n  if [[ $_ANALYTICS_AUTO_SCREEN_REPORTING ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseAutomaticScreenReportingEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_AUTO_SCREEN_REPORTING\")\")\n  fi\n\n  # config.perf_auto_collection_enabled\n  _PERF_AUTO_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"perf_auto_collection_enabled\")\n  if [[ $_PERF_AUTO_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"firebase_performance_collection_enabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_PERF_AUTO_COLLECTION\")\")\n  fi\n\n  # config.perf_collection_deactivated\n  _PERF_DEACTIVATED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"perf_collection_deactivated\")\n  if [[ $_PERF_DEACTIVATED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"firebase_performance_collection_deactivated\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_PERF_DEACTIVATED\")\")\n  fi\n\n  # config.messaging_auto_init_enabled\n  _MESSAGING_AUTO_INIT=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"messaging_auto_init_enabled\")\n  if [[ $_MESSAGING_AUTO_INIT ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseMessagingAutoInitEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_MESSAGING_AUTO_INIT\")\")\n  fi\n\n  # config.in_app_messaging_auto_colllection_enabled\n  _FIAM_AUTO_INIT=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"in_app_messaging_auto_collection_enabled\")\n  if [[ $_FIAM_AUTO_INIT ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseInAppMessagingAutomaticDataCollectionEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_FIAM_AUTO_INIT\")\")\n  fi\n\n  # config.app_check_token_auto_refresh\n  _APP_CHECK_TOKEN_AUTO_REFRESH=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"app_check_token_auto_refresh\")\n  if [[ $_APP_CHECK_TOKEN_AUTO_REFRESH ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseAppCheckTokenAutoRefreshEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_APP_CHECK_TOKEN_AUTO_REFRESH\")\")\n  fi\n\n  # config.crashlytics_disable_auto_disabler - undocumented for now - mainly for debugging, document if becomes useful\n  _CRASHLYTICS_AUTO_DISABLE_ENABLED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"crashlytics_disable_auto_disabler\")\n  if [[ $_CRASHLYTICS_AUTO_DISABLE_ENABLED == \"true\" ]]; then\n    echo \"Disabled Crashlytics auto disabler.\" # do nothing\n  else\n    _PLIST_ENTRY_KEYS+=(\"FirebaseCrashlyticsCollectionEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"NO\")\n  fi\nelse\n  _PLIST_ENTRY_KEYS+=(\"firebase_json_raw\")\n  _PLIST_ENTRY_TYPES+=(\"string\")\n  _PLIST_ENTRY_VALUES+=(\"$_JSON_OUTPUT_BASE64\")\n  echo \"warning:   A firebase.json file was not found, whilst this file is optional it is recommended to include it to configure firebase services in React Native Firebase.\"\nfi;\n\necho \"info: 2) Injecting Info.plist entries: \"\n\n# Log out the keys we're adding\nfor i in \"${!_PLIST_ENTRY_KEYS[@]}\"; do\n  echo \"    ->  $i) ${_PLIST_ENTRY_KEYS[$i]}\" \"${_PLIST_ENTRY_TYPES[$i]}\" \"${_PLIST_ENTRY_VALUES[$i]}\"\ndone\n\nfor plist in \"${_TARGET_PLIST}\" \"${_DSYM_PLIST}\" ; do\n  if [[ -f \"${plist}\" ]]; then\n\n    # paths with spaces break the call to setPlistValue. temporarily modify\n    # the shell internal field separator variable (IFS), which normally\n    # includes spaces, to consist only of line breaks\n    oldifs=$IFS\n    IFS=\"\n\"\n\n    for i in \"${!_PLIST_ENTRY_KEYS[@]}\"; do\n      setPlistValue \"${_PLIST_ENTRY_KEYS[$i]}\" \"${_PLIST_ENTRY_TYPES[$i]}\" \"${_PLIST_ENTRY_VALUES[$i]}\" \"${plist}\"\n    done\n\n    # restore the original internal field separator value\n    IFS=$oldifs\n  else\n    echo \"warning:   A Info.plist build output file was not found (${plist})\"\n  fi\ndone\n\necho \"info: <- RNFB build script finished\"\n";
+		};
+		5758FE452E682F7C00DD2CAE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Moodly-Dev/Pods-Moodly-Dev-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Moodly-Dev/Pods-Moodly-Dev-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Moodly-Dev/Pods-Moodly-Dev-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8145B6B3D8B4ECE016534C75 /* [CP] Check Pods Manifest.lock */ = {
@@ -266,7 +431,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MoodlyFrontend-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Moodly-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -279,15 +444,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MoodlyFrontend/Pods-MoodlyFrontend-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Moodly/Pods-Moodly-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MoodlyFrontend/Pods-MoodlyFrontend-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Moodly/Pods-Moodly-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MoodlyFrontend/Pods-MoodlyFrontend-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Moodly/Pods-Moodly-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E2678CBC0004493F5B93C90A /* [CP-User] [RNFB] Core Configuration */ = {
@@ -314,12 +479,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5758FE302E682F7C00DD2CAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5758FE312E682F7C00DD2CAE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F5723CD91D2775DF838E57B1 /* Pods-MoodlyFrontend.debug.xcconfig */;
+			baseConfigurationReference = 24EB3150E1732AA8A87B7587 /* Pods-Moodly.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -356,7 +529,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 921BCB31129A890BC25C451D /* Pods-MoodlyFrontend.release.xcconfig */;
+			baseConfigurationReference = 83A0C5A084206646DFC99D86 /* Pods-Moodly.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -379,6 +552,78 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.moodly.diary.emotion;
 				PRODUCT_NAME = MoodlyFrontend;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		5758FE472E682F7C00DD2CAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A4AA8005DBD0994650AF250 /* Pods-Moodly-Dev.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MoodlyFrontend/MoodlyFrontend.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P25TGU6M77;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "MoodlyFrontend copy-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "무들리 개발";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.00;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moodly.diary.emotion.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		5758FE482E682F7C00DD2CAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D39C73DB4D506B3408E0CBF /* Pods-Moodly-Dev.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MoodlyFrontend/MoodlyFrontend.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P25TGU6M77;
+				INFOPLIST_FILE = "MoodlyFrontend copy-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "무들리 개발";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.00;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moodly.diary.emotion.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -576,11 +821,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "MoodlyFrontend" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Moodly" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
 				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5758FE462E682F7C00DD2CAE /* Build configuration list for PBXNativeTarget "Moodly-Dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5758FE472E682F7C00DD2CAE /* Debug */,
+				5758FE482E682F7C00DD2CAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

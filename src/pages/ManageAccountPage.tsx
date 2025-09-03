@@ -1,3 +1,4 @@
+import { HOT_UPDATER_SUPABASE_URL } from '@env';
 import { useLogout } from '@features/auth';
 import { SETTING_EVENT_TYPE } from '@features/setting/types';
 import { MODAL_CONFIRM_ACTION_KEY } from '@processes/key';
@@ -45,7 +46,7 @@ const ManageAccountPage = () => {
         return;
       }
 
-      const res = await fetch(`${process.env.HOT_UPDATER_SUPABASE_URL}/functions/v1/smart-api`, {
+      const res = await fetch(`${HOT_UPDATER_SUPABASE_URL}/functions/v1/smart-api`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

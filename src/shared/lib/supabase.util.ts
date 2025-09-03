@@ -7,7 +7,6 @@ import { appApi } from '../api/AppApi';
 import { resetTo } from './navigation.util';
 
 const nativeFetch = globalThis.fetch.bind(globalThis);
-
 export const supabase = createClient(HOT_UPDATER_SUPABASE_URL, HOT_UPDATER_SUPABASE_ANON_KEY, {
   auth: {
     storage: AsyncStorage,

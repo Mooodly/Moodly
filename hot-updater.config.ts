@@ -1,4 +1,5 @@
-import 'dotenv/config';
+import dotenvFlow from 'dotenv-flow';
+dotenvFlow.config();
 
 import { bare } from '@hot-updater/bare';
 import { supabaseDatabase, supabaseStorage } from '@hot-updater/supabase';

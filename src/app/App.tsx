@@ -18,6 +18,7 @@ import '@shared/lib/day.util';
 import { StyleSheet, View } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { useUpsertPushTokenMutation } from '../entities/auth/api/auth.api';
+import OverlayManager from '../processes/overlay/ui/OverlayManager';
 import { useNotificationPermission } from '../shared';
 import FallbackUI from './ui/screens/FallbackUI';
 
@@ -68,6 +69,7 @@ function App() {
               <RootStack />
             </NavigationContainer>
           </SafeAreaProvider>
+          <OverlayManager />
         </Provider>
       </View>
     </GestureHandlerRootView>

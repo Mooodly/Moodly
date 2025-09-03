@@ -8,7 +8,10 @@
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest",
-    "ios:sim": "react-native run-ios --simulator 'iPhone 11'"
+    "ios:sim": "react-native run-ios --simulator 'iPhone 11'",
+    "android:dev": "NODE_ENV=development react-native run-android",
+    "ios:dev": "NODE_ENV=development react-native run-ios",
+    "start:dev": "NODE_ENV=development react-native start"
   },
   "dependencies": {
     "@gorhom/bottom-sheet": "^5",
@@ -26,10 +29,12 @@
     "@tanstack/react-query": "^5.81.5",
     "@tanstack/react-query-devtools": "^5.81.5",
     "dayjs": "^1.11.13",
+    "dotenv-flow": "^4.1.0",
     "install": "^0.13.0",
     "moti": "^0.30.0",
     "react": "19.0.0",
     "react-native": "0.79.1",
+    "react-native-config": "^1.5.9",
     "react-native-css-interop": "^0.1.22",
     "react-native-device-info": "^14.0.4",
     "react-native-gesture-handler": "^2.27.1",
