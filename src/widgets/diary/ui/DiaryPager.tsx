@@ -54,6 +54,7 @@ export const DiaryPager = () => {
         : DiaryCalendarMode.monthDayMode;
 
     dispatch(setCalendarMode(nextMode));
+    console.log('>@>$!>>$@', nextMode);
   }, [calendarMode, dispatch]);
 
   const actionButtons = useMemo(

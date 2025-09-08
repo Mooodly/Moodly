@@ -2,6 +2,8 @@ import { Text, type TextProps } from 'react-native';
 
 import { useScale } from '@/shared/hooks';
 
+import { androidStyle } from './Common';
+
 type Props = TextProps & { weight: 'regular' | 'semibold'; size?: number };
 
 export function H1({ children, weight, size, style, ...rest }: Props) {
@@ -11,7 +13,7 @@ export function H1({ children, weight, size, style, ...rest }: Props) {
   return (
     <Text
       className={className}
-      style={[{ fontSize: fontSizeValue }, style]}
+      style={[{ fontSize: fontSizeValue }, androidStyle, style]}
       {...rest}
     >
       {children}
