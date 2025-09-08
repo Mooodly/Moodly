@@ -29,7 +29,6 @@ const SettingPage = () => {
   const [status, setStatus] = useState('');
 
   useEffect(() => {
-    console.log('!@>$!@>$>>!@$>!@이고동작하냐');
     const checkApi = async () => {
       const response = await checkNotifications();
       setStatus(response.status);

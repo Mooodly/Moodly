@@ -129,3 +129,12 @@ dependencies {
 }
 
 apply plugin: 'com.google.gms.google-services'
+
+apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
+
+project.ext.envConfigFiles = [
+    developmentDebug: ".env.development",
+    developmentRelease: ".env.development",
+    productionDebug: ".env.production",
+    productionRelease: ".env.production",
+]

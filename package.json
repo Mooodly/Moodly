@@ -30,6 +30,7 @@
     "moti": "^0.30.0",
     "react": "19.0.0",
     "react-native": "0.79.1",
+    "react-native-config": "^1.5.9",
     "react-native-css-interop": "^0.1.22",
     "react-native-device-info": "^14.0.4",
     "react-native-gesture-handler": "^2.27.1",
