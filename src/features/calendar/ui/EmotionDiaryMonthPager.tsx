@@ -54,7 +54,6 @@ export const EmotionDiaryMonthPager = ({
       maxToRenderPerBatch={3}
       updateCellsBatchingPeriod={80}
       windowSize={3}
-      removeClippedSubviews
       getItemLayout={(_, i) => ({ length: SCREEN_WIDTH, offset: SCREEN_WIDTH * i, index: i })}
       initialScrollIndex={1}
       scrollEventThrottle={16}

@@ -75,7 +75,6 @@ const EmotionDiaryMonthView = ({
         return `unknown-${item}`;
     }
   }, []);
-
   return (
     <View style={styles.page}>
       <FlatList<ListItem>

@@ -217,7 +217,6 @@ const OnboardingPage = () => {
           onMomentumScrollEnd={onMomentumScrollEnd}
           onScroll={onScroll}
           getItemLayout={getItemLayout}
-          removeClippedSubviews
           windowSize={2}
           initialNumToRender={1}
           maxToRenderPerBatch={2}
