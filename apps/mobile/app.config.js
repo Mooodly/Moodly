@@ -3,7 +3,7 @@ import 'dotenv/config';
 import * as fs from 'fs';
 import * as path from 'path';
 
-const APP_ENV = process.env.APP_ENV ?? 'develop'; // develop | staging | production
+const APP_ENV = process.env.EXPO_PUBLIC_APP_ENV ?? 'develop'; // develop | staging | production
 const isProd = APP_ENV === 'production';
 const isStg = APP_ENV === 'staging';
 
