@@ -96,7 +96,7 @@ export default {
   android: {
     package: androidPackage,
     googleServicesFile: androidGoogleServiceFile,
-    versionCode: 7,
+    versionCode: 8,
     adaptiveIcon: {
       foregroundImage: icon,
       backgroundColor: '#ffffff',
