@@ -1,0 +1,78 @@
+{
+  "project_info": {
+    "project_number": "1029653961787",
+    "project_id": "moodly-ca215",
+    "storage_bucket": "moodly-ca215.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029653961787:android:9c1fe0832073efb90a501e",
+        "android_client_info": {
+          "package_name": "com.moodlyfrontend"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1029653961787-00rh45lrnm8r2b5r16i427iqk14c5d07.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.moodlyfrontend",
+            "certificate_hash": "8e773d015e61533e5da0ded2e42d90e21840fc49"
+          }
+        },
+        {
+          "client_id": "1029653961787-8tgv1f85c99s5fmbdlf982clk90475h1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.moodlyfrontend",
+            "certificate_hash": "0fe09681d6a15b7f29e5bad84876df856544c6f4"
+          }
+        },
+        {
+          "client_id": "1029653961787-gorthuj09ljqabtlbdmsp3e04oqhcjvd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.moodlyfrontend",
+            "certificate_hash": "0d325e700b4a9c9ed509031d8d6dfcfb6f5131e0"
+          }
+        },
+        {
+          "client_id": "1029653961787-nj2uf6pil1e1nnfkdjhn1ril196099p9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.moodlyfrontend",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "1029653961787-p3v3eqhkgncnc4e00ol1ir2un70teh7d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeTRUn_MH9rmG0fFHc1yxDq0I5JZwlYxs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1029653961787-85hovgorkuuidjh4bkjhbrrhhpbcr3g7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1029653961787-bsvjqvot9l43h4np5jip0lm3kh83jg3k.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.moodly.diary.emotion"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -42,7 +42,6 @@ yarn-error.*
 /ios
 /android
 
-google-services.*.json
 moodly-*.json
 # *.plist
 *.keystore

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "238578355345",
+    "project_id": "moodly-dev",
+    "storage_bucket": "moodly-dev.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:238578355345:android:ef1423c479451f9d678330",
+        "android_client_info": {
+          "package_name": "com.moodlydev"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZZZBhKk4_ozbtPT3HWNDSMmJrlx3d5M0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
