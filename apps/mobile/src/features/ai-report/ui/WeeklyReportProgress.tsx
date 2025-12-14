@@ -1,7 +1,9 @@
 import { Image, StyleSheet, View } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { useWeeklyReportStatus } from '@/features/ai-report/hooks/useWeeklyReportStatus';
 import { COMMON_ICONS } from '@/shared/assets/images/common';
+import { isIphone } from '@/shared/lib/user.util';
 import { gray, primary } from '@/shared/styles/colors';
 import ActionButton from '@/shared/ui/elements/ActionButton';
 import { Body2 } from '@/shared/ui/typography/Body2';
@@ -33,7 +35,7 @@ type Props = {
 
 export const WeeklyReportProgress = ({ weeklyCount, dailyStatus, onConfirm }: Props) => {
   const { uiState, remainForReport, isGoalReached } = useWeeklyReportStatus(weeklyCount);
-
+  const insets = useSafeAreaInsets();
   return (
     <View style={styles.container}>
       <View style={styles.content}>
@@ -59,7 +61,7 @@ export const WeeklyReportProgress = ({ weeklyCount, dailyStatus, onConfirm }: Pr
       </View>
 
       <ActionButton
-        style={styles.button}
+        style={[styles.button, { marginBottom: isIphone() ? 0 : insets.bottom }]}
         onPress={onConfirm}
       >
         <Body2

@@ -1,6 +1,7 @@
 import { StyleSheet, TouchableWithoutFeedback, View } from 'react-native';
 
 import { getScaleSize } from '@/shared/hooks/useScale';
+import { isIphone } from '@/shared/lib/user.util';
 import { gray } from '@/shared/styles/colors';
 import { H3 } from '@/shared/ui/typography/H3';
 
@@ -9,11 +10,11 @@ interface KeyboardAccessoryButtonProps {
 }
 
 export const KeyboardAccessoryButton = ({ onPress }: KeyboardAccessoryButtonProps) => (
-  <View style={styles.container}>
+  <View style={[styles.container, { height: isIphone() ? 40 : 90 }]}>
     <TouchableWithoutFeedback onPress={onPress}>
       <H3
         weight="semibold"
-        style={styles.text}
+        style={[styles.text, { marginBottom: isIphone() ? 0 : 15 }]}
       >
         저장
       </H3>
@@ -24,7 +25,6 @@ export const KeyboardAccessoryButton = ({ onPress }: KeyboardAccessoryButtonProp
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    height: 40,
     justifyContent: 'flex-start',
     borderTopWidth: 0.5,
     borderTopColor: '#C6C9D7',
