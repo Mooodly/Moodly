@@ -83,7 +83,7 @@ export default {
   assetBundlePatterns: ['**/*'],
 
   ios: {
-    buildNumber: '5',
+    buildNumber: '6',
     bundleIdentifier: iosBundleId,
     googleServicesFile: iosGoogleServiceFile,
     infoPlist: {
