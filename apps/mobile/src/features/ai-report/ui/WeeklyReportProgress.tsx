@@ -61,7 +61,7 @@ export const WeeklyReportProgress = ({ weeklyCount, dailyStatus, onConfirm }: Pr
       </View>
 
       <ActionButton
-        style={[styles.button, { marginBottom: isIphone() ? 0 : insets.bottom }]}
+        style={{ marginBottom: isIphone() ? 20 : 20 + insets.bottom }}
         onPress={onConfirm}
       >
         <Body2
@@ -126,9 +126,6 @@ const styles = StyleSheet.create({
   dayText: {
     textAlign: 'center',
     marginTop: 4,
-  },
-  button: {
-    marginBottom: 20,
   },
   buttonText: {
     color: 'white',
