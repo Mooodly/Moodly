@@ -164,7 +164,7 @@ export const authApi = appApi.injectEndpoints({
           .from('tb_profiles')
           .select('*')
           .eq('id', user.id)
-          .single();
+          .maybeSingle();
         if (error) throw error;
         return data as UserInfo;
       },

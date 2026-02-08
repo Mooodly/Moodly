@@ -57,6 +57,7 @@
     },
     "production-simulator": {
       "extends": "production",
+      "developmentClient": false,
       "ios": {
         "simulator": true,
         "distribution": "internal"

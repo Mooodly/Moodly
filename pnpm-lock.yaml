@@ -95,9 +95,6 @@ importers:
       expo-constants:
         specifier: 18.0.10
         version: 18.0.10(expo@54.0.20(@babel/core@7.28.4)(graphql@16.12.0)(react-native@0.81.5(@babel/core@7.28.4)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0))(react-native@0.81.5(@babel/core@7.28.4)(@types/react@19.1.17)(react@19.1.0))
-      expo-dev-client:
-        specifier: 6.0.16
-        version: 6.0.16(expo@54.0.20(@babel/core@7.28.4)(graphql@16.12.0)(react-native@0.81.5(@babel/core@7.28.4)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0))
       expo-device:
         specifier: 8.0.9
         version: 8.0.9(expo@54.0.20(@babel/core@7.28.4)(graphql@16.12.0)(react-native@0.81.5(@babel/core@7.28.4)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0))
@@ -3253,26 +3250,6 @@ packages:
       expo: '*'
       react-native: '*'
 
-  expo-dev-client@6.0.16:
-    resolution: {integrity: sha512-8GLud/dtNteqChL9pNGqLBSHd7of2scFmsgN5WwWgtt2dET7+EJM/K1zp0FYUzfmIF5NLsf5xUDg6AjDldOLqg==}
-    peerDependencies:
-      expo: '*'
-
-  expo-dev-launcher@6.0.16:
-    resolution: {integrity: sha512-OVg5T5ip7evh8zHJeIj2IYgtvTeY8EOiwNQYlmN0JHAw8wlUxYHnSf08RcevVgYTKcIryCyeLG5UHxsQQWbycA==}
-    peerDependencies:
-      expo: '*'
-
-  expo-dev-menu-interface@2.0.0:
-    resolution: {integrity: sha512-BvAMPt6x+vyXpThsyjjOYyjwfjREV4OOpQkZ0tNl+nGpsPfcY9mc6DRACoWnH9KpLzyIt3BOgh3cuy/h/OxQjw==}
-    peerDependencies:
-      expo: '*'
-
-  expo-dev-menu@7.0.15:
-    resolution: {integrity: sha512-aThUhoBUuQVbCS2k0MwP28/au46FqOXAAiGtCYIWp+Hne95RgFO+KaO0VGksJFwK7I9IPbbminm8ijZDf2KzXg==}
-    peerDependencies:
-      expo: '*'
-
   expo-device@8.0.9:
     resolution: {integrity: sha512-XqRpaljDNAYZGZzMpC+b9KZfzfydtkwx3pJAp6ODDH+O/5wjAw+mLc5wQMGJCx8/aqVmMsAokec7iebxDPFZDA==}
     peerDependencies:
@@ -5107,6 +5084,7 @@ packages:
   react-server-dom-webpack@19.0.0:
     resolution: {integrity: sha512-hLug9KEXLc8vnU9lDNe2b2rKKDaqrp5gNiES4uyu2Up3FZfZJZmdwLFXlWzdA9gTB/6/cWduSB2K1Lfag2pSvw==}
     engines: {node: '>=0.10.0'}
+    deprecated: Critical Security Vulnerability in React Server Components
     peerDependencies:
       react: ^19.0.0
       react-dom: ^19.0.0
@@ -5605,6 +5583,7 @@ packages:
   tar@7.5.2:
     resolution: {integrity: sha512-7NyxrTE4Anh8km8iEy7o0QYPs+0JKBTj5ZaqHg6B39erLg0qYXN3BijtShwbsNSvQ+LN75+KV+C4QR/f6Gwnpg==}
     engines: {node: '>=18'}
+    deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exhorbitant rates) by contacting i@izs.me
 
   tdigest@0.1.2:
     resolution: {integrity: sha512-+G0LLgjjo9BZX2MfdvPfH+MKLCrxlXSYec5DaPYP1fe6Iyhf0/fSmJ0bFiZ1F8BT6cGXl2LpltQptzjXKWEkKA==}
@@ -5966,6 +5945,7 @@ packages:
   whatwg-encoding@2.0.0:
     resolution: {integrity: sha512-p41ogyeMUrw3jWclHWTQg1k05DSVXPLcVxRTYsXUk+ZooOCZLcoYgPZ/HL/D/N+uQPOtcp1me1WhBEaX02mhWg==}
     engines: {node: '>=12'}
+    deprecated: Use @exodus/bytes instead for a more spec-conformant and faster implementation
 
   whatwg-fetch@3.6.20:
     resolution: {integrity: sha512-EqhiFU6daOA8kpjOWTL0olhVOF3i7OrFzSYiGsEMB8GcXS+RrzauAERX65xMeNWVqxA6HXH2m69Z9LaKKdisfg==}
@@ -10112,34 +10092,6 @@ snapshots:
       react-native: 0.81.5(@babel/core@7.28.4)(@types/react@19.1.17)(react@19.1.0)
     transitivePeerDependencies:
       - supports-color
-
-  expo-dev-client@6.0.16(expo@54.0.20(@babel/core@7.28.4)(graphql@16.12.0)(react-native@0.81.5(@babel/core@7.28.4)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0)):
-    dependencies:
-      expo: 54.0.20(@babel/core@7.28.4)(graphql@16.12.0)(react-native@0.81.5(@babel/core@7.28.4)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0)
-      expo-dev-launcher: 6.0.16(expo@54.0.20(@babel/core@7.28.4)(graphql@16.12.0)(react-native@0.81.5(@babel/core@7.28.4)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0))
-      expo-dev-menu: 7.0.15(expo@54.0.20(@babel/core@7.28.4)(graphql@16.12.0)(react-native@0.81.5(@babel/core@7.28.4)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0))
-      expo-dev-menu-interface: 2.0.0(expo@54.0.20(@babel/core@7.28.4)(graphql@16.12.0)(react-native@0.81.5(@babel/core@7.28.4)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0))
-      expo-manifests: 1.0.9(expo@54.0.20(@babel/core@7.28.4)(graphql@16.12.0)(react-native@0.81.5(@babel/core@7.28.4)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0))
-      expo-updates-interface: 2.0.0(expo@54.0.20(@babel/core@7.28.4)(graphql@16.12.0)(react-native@0.81.5(@babel/core@7.28.4)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0))
-    transitivePeerDependencies:
-      - supports-color
-
-  expo-dev-launcher@6.0.16(expo@54.0.20(@babel/core@7.28.4)(graphql@16.12.0)(react-native@0.81.5(@babel/core@7.28.4)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0)):
-    dependencies:
-      expo: 54.0.20(@babel/core@7.28.4)(graphql@16.12.0)(react-native@0.81.5(@babel/core@7.28.4)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0)
-      expo-dev-menu: 7.0.15(expo@54.0.20(@babel/core@7.28.4)(graphql@16.12.0)(react-native@0.81.5(@babel/core@7.28.4)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0))
-      expo-manifests: 1.0.9(expo@54.0.20(@babel/core@7.28.4)(graphql@16.12.0)(react-native@0.81.5(@babel/core@7.28.4)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0))
-    transitivePeerDependencies:
-      - supports-color
-
-  expo-dev-menu-interface@2.0.0(expo@54.0.20(@babel/core@7.28.4)(graphql@16.12.0)(react-native@0.81.5(@babel/core@7.28.4)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0)):
-    dependencies:
-      expo: 54.0.20(@babel/core@7.28.4)(graphql@16.12.0)(react-native@0.81.5(@babel/core@7.28.4)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0)
-
-  expo-dev-menu@7.0.15(expo@54.0.20(@babel/core@7.28.4)(graphql@16.12.0)(react-native@0.81.5(@babel/core@7.28.4)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0)):
-    dependencies:
-      expo: 54.0.20(@babel/core@7.28.4)(graphql@16.12.0)(react-native@0.81.5(@babel/core@7.28.4)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0)
-      expo-dev-menu-interface: 2.0.0(expo@54.0.20(@babel/core@7.28.4)(graphql@16.12.0)(react-native@0.81.5(@babel/core@7.28.4)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0))
 
   expo-device@8.0.9(expo@54.0.20(@babel/core@7.28.4)(graphql@16.12.0)(react-native@0.81.5(@babel/core@7.28.4)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0)):
     dependencies:

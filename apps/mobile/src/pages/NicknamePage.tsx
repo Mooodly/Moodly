@@ -1,5 +1,4 @@
 import { StyleSheet, View } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { SetNicknameForm } from '@/features/set-nickname/ui/SetNicknameForm';
 import { getScaleSize } from '@/shared/hooks/useScale';
@@ -15,7 +14,7 @@ const NicknamePage = () => {
   return (
     <>
       <NavigationBar />
-      <SafeAreaView style={styles.container}>
+      <View style={styles.container}>
         <View style={styles.inner}>
           <H2
             weight="semibold"
@@ -25,7 +24,7 @@ const NicknamePage = () => {
           </H2>
           <SetNicknameForm onSuccess={handleSuccess} />
         </View>
-      </SafeAreaView>
+      </View>
     </>
   );
 };
@@ -40,7 +39,7 @@ const styles = StyleSheet.create({
     flex: 1,
     height: '100%',
     paddingHorizontal: 20,
-    marginTop: 7,
+    marginTop: 40,
   },
   title: {
     textAlign: 'left',
